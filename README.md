@@ -83,6 +83,14 @@ rsync -azvh --checksum --delete --exclude '.*' ~/ /tmp/backup/
 
 ### Решение 3
 
+Команда для синхронизации с другим сервером и использованием ограничения скорости передачи в 1 Мбит/c
+
+rsync -azh --progress --bwlimit=1024 /home/user/debian-12.11.0-amd64-netinst.iso user@89.169.182.99:/home/user/backup
+
+![Решение 3](https://github.com/noisy441/backup/blob/main/img/img5.png)
+
+![Решение 3](https://github.com/noisy441/backup/blob/main/img/img6.png)
+
 ---
 
 ### Задание 4*
