@@ -59,7 +59,9 @@ rsync -azvh --checksum --delete --exclude '.*' ~/ /tmp/backup/
 
 ### Решение 2
 
-[Скрипт для бекапа](1/backup.sh)
+[Скрипт для бекапа](2/backup.sh)
+
+[Файл crontab](2/crontab)
 
 Запись в системном журнале
 
@@ -74,7 +76,7 @@ rsync -azvh --checksum --delete --exclude '.*' ~/ /tmp/backup/
 ## Задания со звёздочкой*
 Эти задания дополнительные. Их можно не выполнять. На зачёт это не повлияет. Вы можете их выполнить, если хотите глубже разобраться в материале.
 
----
+---s
 
 ### Задание 3*
 - Настройте ограничение на используемую пропускную способность rsync до 1 Мбит/c
@@ -82,14 +84,6 @@ rsync -azvh --checksum --delete --exclude '.*' ~/ /tmp/backup/
 - На проверку направьте команду и результат ее выполнения в виде скриншота
 
 ### Решение 3
-
-Команда для синхронизации с другим сервером и использованием ограничения скорости передачи в 1 Мбит/c
-
-rsync -azh --progress --bwlimit=1024 /home/user/debian-12.11.0-amd64-netinst.iso user@89.169.182.99:/home/user/backup
-
-![Решение 3](https://github.com/noisy441/backup/blob/main/img/img5.png)
-
-![Решение 3](https://github.com/noisy441/backup/blob/main/img/img6.png)
 
 ---
 
