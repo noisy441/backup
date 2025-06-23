@@ -42,6 +42,12 @@
 
 ### Решение 1
 
+rsync -azvh --checksum --delete --exclude '.*' ~/ /tmp/backup/
+
+![Решение 1](https://github.com/noisy441/backup/blob/main/img/img1.png)
+
+![Решение 1](https://github.com/noisy441/backup/blob/main/img/img2.png)
+
 ---
 
 ### Задание 2
@@ -52,6 +58,16 @@
 - На проверку направить файл crontab и скриншот с результатом работы утилиты.
 
 ### Решение 2
+
+[Скрипт для бекапа](1/backup.sh)
+
+Запись в системном журнале
+
+![Решение 2](https://github.com/noisy441/backup/blob/main/img/img3.png)
+
+Запись в файле /var/log/backup.log
+
+![Решение 2](https://github.com/noisy441/backup/blob/main/img/img4.png)
 
 ---
 
